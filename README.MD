@@ -11,6 +11,7 @@ Check out my Code Wars profile [here](https://www.codewars.com/users/TheCrimb)!
 |      Title     |   Solutions   | Comments  | Difficulty  | Tag  | Date                 
 |----------------|---------------|--------|-------------|-------------|---------
 |[Alien Language](https://www.codewars.com/kata/5728203b7fc662a4c4000ef3)|[Solution](codewars/AlienLanuage.js) ||7 kyu||08/16/2023|
+|[Simple String Reversal](https://www.codewars.com/kata/5a71939d373c2e634200008e/javascript)|[Solution](codewars/SimpleStringReversal.js) | Fun! A nice puzzle that helped me review various prototype methods |7 kyu||08/31/2023|
 
 ## Repls
 |      Title     |   Solutions   | Comments  | Difficulty  | Tag  | Date                 
