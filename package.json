@@ -4,5 +4,8 @@
   },
   "dependencies": {
     "chai": "^4.3.8"
+  },
+  "scripts": {
+    "test": "mocha"
   }
 }

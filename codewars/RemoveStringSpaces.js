@@ -23,3 +23,5 @@ function noSpace0(x){
   return y;
 
 };
+
+module.exports = { noSpace0, noSpace1 };
