@@ -1,5 +1,6 @@
-var assert = require('chai').assert;
-var { noSpace0, noSpace1 } = require('../codewars/RemoveStringSpaces.js');
+const assert = require('chai').assert;
+const { noSpace0, noSpace1 } = require('../codewars/RemoveStringSpaces.js');
+const expect = chai.expect;
 
 describe('Array', () => {
   it('should return -1 when the value is not present', () => {
