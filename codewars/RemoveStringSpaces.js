@@ -5,7 +5,6 @@ function noSpace1(x){
   return x.split(" ").join("");
 };
 
-
 // ORIGINAL SOLUTION
 function noSpace0(x){
   var y = "";
@@ -19,7 +18,6 @@ function noSpace0(x){
   return y;
 
 };
-
 
 /* 
 ANALYSIS
