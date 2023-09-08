@@ -60,4 +60,7 @@ const filterNullValues = (arr) => {
     })
 }
 
+//I like this version because it uses the delete keyword which is new to 
+//me, but maybe we try to figure out a way with a better time complexity
+
 module.exports = { dataArray, filteredArray, filterNullValues };
