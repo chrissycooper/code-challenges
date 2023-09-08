@@ -46,3 +46,5 @@ const dataArray = [
 //         "setting": "direct_pay"
 //     }
 // ]
+
+module.exports = { dataArray };
