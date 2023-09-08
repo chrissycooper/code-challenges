@@ -19,7 +19,7 @@ describe('filterNullValues', () => {
     const values = Object.values(filteredArr)
 
     values.forEach((value) => {
-      expect(value).to.not.be('null')
+      expect(value).to.not.equal(null);
     })
     expect(filteredArr).to.be.an('array');
     expect(filteredArr[0]).to.be.an('object');
