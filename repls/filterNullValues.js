@@ -47,4 +47,17 @@ const filteredArray = [
     }
 ]
 
-module.exports = { dataArray, filteredArray };
+//CODE GOES HERE 
+
+const filterNullValues = (arr) => {
+  const keys = Object.keys(arr[0])
+   return arr.map((obj) => {
+      //read each key and remove it if null
+      keys.forEach((key) => {
+        obj[key] === null && delete obj[key]
+      })
+     return obj
+    })
+}
+
+module.exports = { dataArray, filteredArray, filterNullValues };
