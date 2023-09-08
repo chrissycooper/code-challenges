@@ -26,25 +26,25 @@ const dataArray = [
 
 
 // after clean up it should look like this: 
-//[
-//     {
-//         "id": 1,
-//         "name": "bri",
-//         "other_id": "9",
-//     },
-//     {
-//         "id": 2,
-//         "name": "school",
-//         "other_id": "99",
-//         "url": "google.com",
-//         "setting": "code_only"
-//     },
-//     {
-//         "id": 3,
-//         "name": "tuna",
-//         "other_id": "23",
-//         "setting": "direct_pay"
-//     }
-// ]
+const filteredArray = [
+    {
+        "id": 1,
+        "name": "bri",
+        "other_id": "9",
+    },
+    {
+        "id": 2,
+        "name": "school",
+        "other_id": "99",
+        "url": "google.com",
+        "setting": "code_only"
+    },
+    {
+        "id": 3,
+        "name": "tuna",
+        "other_id": "23",
+        "setting": "direct_pay"
+    }
+]
 
-module.exports = { dataArray };
+module.exports = { dataArray, filteredArray };
