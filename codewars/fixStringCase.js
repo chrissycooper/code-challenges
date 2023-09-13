@@ -7,3 +7,25 @@ For example:
 solve("coDe") = "code". Lowercase characters > uppercase. Change only the "D" to lowercase.
 solve("CODe") = "CODE". Uppercase characters > lowecase. Change only the "e" to uppercase.
 solve("coDE") = "code". Upper == lowercase. Change all to lowercase. */
+
+function solve(s){
+  const upperReg = /[A-Z]/
+  let upperCase = 0;
+  let lowerCase = 0;
+  
+  s.split('').forEach(letter => {
+    if(upperReg.test(letter)) {
+      upperCase += 1;
+    } else {
+      lowerCase += 1;
+    }
+  });
+  
+  if(upperCase > lowerCase){
+    return s.toUpperCase()
+  } else {
+    return s.toLowerCase()
+  }
+};
+
+module.exports = { solve };
