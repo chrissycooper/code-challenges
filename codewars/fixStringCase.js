@@ -15,17 +15,13 @@ function solve(s){
   
   s.split('').forEach(letter => {
     if(upperReg.test(letter)) {
-      upperCase += 1;
+      upperCase++;
     } else {
-      lowerCase += 1;
+      lowerCase++;
     }
   });
   
-  if(upperCase > lowerCase){
-    return s.toUpperCase()
-  } else {
-    return s.toLowerCase()
-  }
+  return upperCase > lowerCase ? s.toUpperCase() : s.toLowerCase()
 };
 
 module.exports = { solve };
