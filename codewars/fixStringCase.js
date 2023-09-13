@@ -14,11 +14,7 @@ function solve(s){
   let lowerCase = 0;
   
   s.split('').forEach(letter => {
-    if(upperReg.test(letter)) {
-      upperCase++;
-    } else {
-      lowerCase++;
-    }
+    upperReg.test(letter) ? upperCase++ : lowerCase++;
   });
   
   return upperCase > lowerCase ? s.toUpperCase() : s.toLowerCase()
