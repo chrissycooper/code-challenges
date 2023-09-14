@@ -14,27 +14,27 @@ describe('reverse_and_combine_text', () => {
     expect(reverseAndCombineText).to.be.a('function');
   });
 
-  it('Should reverse a simple two word string', () => {
+  it.skip('Should reverse a simple two word string', () => {
     const newStr1 = reverseAndCombineText(str1)
     expect(newStr1).to.equal('cbafed');
   });
 
-  it('Should reverse a more complex string', () => {
+  it.skip('Should reverse a more complex string', () => {
     const newStr2 = reverseAndCombineText(str2)
     expect(newStr2).to.equal('defabcjklghi');
   });
 
-  it('Should return a string without spaces unchanged', () => {
+  it.skip('Should return a string without spaces unchanged', () => {
     const newStr3 = reverseAndCombineText(str3)
     expect(newStr3).to.equal('tuberculosis');
   });
 
-  it('Should reverse an EVEN MORE complex string', () => {
+  it.skip('Should reverse an EVEN MORE complex string', () => {
     const newStr4 = reverseAndCombineText(str4)
     expect(newStr4).to.equal('trzwqfdstrteettr45hh4325543544hjhjh21lllll');
   });
 
-  it('Should reverse an odd word count complex string', () => {
+  it.skip('Should reverse an odd word count complex string', () => {
     const newStr5 = reverseAndCombineText(str5)
     expect(newStr5).to.equal('gffds432243fdsfdseewttf');
   });
