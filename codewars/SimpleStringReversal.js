@@ -1,6 +1,6 @@
 //version with comments below!
 
-function solve(str){
+function reverseString(str){
   const split1 = str.split(" ")
 
   if(split1.length === 1){
@@ -51,3 +51,5 @@ function solve(str){
 //     //return the joined string!
 //   }
 // };
+
+module.exports = { reverseString };
