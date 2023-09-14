@@ -20,8 +20,8 @@ Input:  "abc def gh34 434ff 55_eri 123 343"
 Output: "43hgff434cbafed343ire_55321"
 */
 
-function reverse_and_combine_text(str) {
+function reverseAndCombineText(str) {
 
 };
 
-module.export = { reverse_and_combine_text };
+module.exports = { reverseAndCombineText };
