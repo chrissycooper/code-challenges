@@ -19,12 +19,13 @@ describe('reverse_and_combine_text', () => {
     expect(newStr1).to.equal('cbafed');
   });
 
-  it.skip('Should reverse a more complex string', () => {
+  it('Should reverse a more complex string', () => {
     const newStr2 = reverseAndCombineText(str2)
+    // console.log('newStr2', newStr2)
     expect(newStr2).to.equal('defabcjklghi');
   });
 
-  it.skip('Should return a string without spaces unchanged', () => {
+  it('Should return a string without spaces unchanged', () => {
     const newStr3 = reverseAndCombineText(str3)
     expect(newStr3).to.equal('tuberculosis');
   });

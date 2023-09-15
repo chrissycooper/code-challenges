@@ -21,7 +21,37 @@ Output: "43hgff434cbafed343ire_55321"
 */
 
 function reverseAndCombineText(str) {
+// split by spaces, reverse each word, combine pairs starting at zero index
+  //repeat process as necessary (that's why some are in forward order, they get re-reversed)
+  //recursion?? - so I'd have to change it to a string and return it or pass it back in
+  let reduceList;
+  const wordList = str.split(' ')
+  
+  if(wordList.length === 1){
+    return wordList.join()
+  } else {
+    reduceList = wordList.reduce((acc, word, index) => {
+        let reverseWord = word.split('').reverse().join('')
+        index === 0 || index % 2 === 0 ? acc.push(reverseWord) : acc.push(acc.pop() + reverseWord)
+        return acc
+    }, [])
+    //would reduce be better? creating the array more purposefully as we go on?
+//     console.log('reducelist', reduceList)
+  }
+   
+  console.log(reduceList.length)
+  let answer;
+  if(reduceList.length === 1 ){
+      answer = reduceList.join()
+      console.log('reducelist', reduceList)
+      console.log(answer, 'answer 46')
+      return answer
+   } else if(reduceList.length > 1) {
+      console.log('recursion block')
+      return reverseAndCombineText(reduceList.join(' '))
+   }
 
+   // console.log(answer, "answer 53")
 };
 
 module.exports = { reverseAndCombineText };
