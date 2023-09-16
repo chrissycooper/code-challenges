@@ -5,4 +5,7 @@ describe('Simple String Reversal', () => {
   it('Should be a function', () => {
     expect(reverseString).to.be.a('function');
   })
+  it('Should be a function', () => {
+    expect(reverseString).to.be.a('function');
+  })
 })
