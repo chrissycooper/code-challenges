@@ -14,14 +14,13 @@ describe('reverse_and_combine_text', () => {
     expect(reverseAndCombineText).to.be.a('function');
   });
 
-  it.skip('Should reverse a simple two word string', () => {
+  it('Should reverse a simple two word string', () => {
     const newStr1 = reverseAndCombineText(str1)
     expect(newStr1).to.equal('cbafed');
   });
 
   it('Should reverse a more complex string', () => {
     const newStr2 = reverseAndCombineText(str2)
-    // console.log('newStr2', newStr2)
     expect(newStr2).to.equal('defabcjklghi');
   });
 
@@ -30,12 +29,12 @@ describe('reverse_and_combine_text', () => {
     expect(newStr3).to.equal('tuberculosis');
   });
 
-  it.skip('Should reverse an EVEN MORE complex string', () => {
+  it('Should reverse an EVEN MORE complex string', () => {
     const newStr4 = reverseAndCombineText(str4)
     expect(newStr4).to.equal('trzwqfdstrteettr45hh4325543544hjhjh21lllll');
   });
 
-  it.skip('Should reverse an odd word count complex string', () => {
+  it('Should reverse an odd word count complex string', () => {
     const newStr5 = reverseAndCombineText(str5)
     expect(newStr5).to.equal('gffds432243fdsfdseewttf');
   });
