@@ -10,4 +10,4 @@ function accum(s) {
 
 };
 
-export default accum
+module.exports = { accum };
