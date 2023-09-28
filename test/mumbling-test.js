@@ -11,4 +11,15 @@ describe("mumbling: accum", () => {
     expect(test1).to.equal("A-Bb-Ccc-Dddd")
   })
 
+  it("Should work on a short string, mixed case", ()=> {
+    const test3 = accum("cwAt")
+    expect(test3).to.equal("C-Ww-Aaa-Tttt")
+  })
+
+  it("Should work on a longer string, mixed case", ()=> {
+    const test2 = accum("RqaEzty")
+    expect(test2).to.equal("R-Qq-Aaa-Eeee-Zzzzz-Tttttt-Yyyyyyy")
+  })
+
+
 })
