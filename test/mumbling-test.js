@@ -11,6 +11,11 @@ describe("mumbling: accum", () => {
     expect(test1).to.equal("A-Bb-Ccc-Dddd")
   })
 
+  it("Should work on a short string all uppercase", ()=> {
+    const test1 = accum("ABCD")
+    expect(test1).to.equal("A-Bb-Ccc-Dddd")
+  })
+
   it("Should work on a short string, mixed case", ()=> {
     const test2 = accum("cwAt")
     expect(test2).to.equal("C-Ww-Aaa-Tttt")
